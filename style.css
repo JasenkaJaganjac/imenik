@@ -1,0 +1,85 @@
+.naslov{  
+  background-color: #209dd2;
+    color: #fff;
+    padding: 50px 0;
+	}
+	
+	h1{
+	
+	margin: 0;
+    text-align: center;
+	font-size: 71px;
+}
+
+	.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+	b {
+		
+    font-weight: 900;}
+	
+	.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.form2{
+	 background: #5DADE2;
+}
+.form2 h2{
+	font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.form1 h2{
+	font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.form1 p{
+	
+    text-align: center;
+    color: #fff;
+}
+.form2 .btnSubmit{
+    font-weight: 600;
+	font-size:15px;
+    color: #5DADE2;
+    background-color: #fff;
+	
+}
+.form1 .btnSubmit{
+    font-weight: 600;
+	font-size:15px;
+    color: #fff;
+    background-color: #5DADE2;
+	
+}
+.form2 label{
+    
+    color: #fff;
+    ;
+}
+.form2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.form1{
+	background-color:#AED6F1;}
+
+.content{display: flex;
+}
+.form-group{
+	padding-left: 150px;
+	width: 450px;
+}
