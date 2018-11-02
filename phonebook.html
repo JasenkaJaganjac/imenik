@@ -18,37 +18,89 @@
         <h1><b>PHONE</b>BOOK</h1>
               </div>
 			  </div> 
-<div class="container">		
-	  
+<div class="container">	
+ <br>	
+<input class="form-control-sm" id="myInput" type="text" placeholder="Search.." >
+<button add new contact type="button" class="btn btn-light">
+			<img src="img/add.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button>
+			
+<br> 
+  <br>
   <table class="table table-striped">
     <thead>
       <tr>
 	  <th></th>
         <th>Firstname</th>
         <th>Lastname</th>
+		<th>Phonenumber</th>
         <th>Email</th>
+		<th></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable">
       <tr>
-	  <td><img src\img\minnie.img" alt=" "></td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+	  <td><img src="img/minnie.gif" alt=" " style="width:70px;height: 50px;"> </td>
+        <td>Minnie</td>
+        <td>Mouse</td>
+		<th>+38761123456</th>
+        <td>minnie@disney.com</td>
+		<td><button type="button" class="btn btn-light">
+			<img src="img/edit.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button>
+				<button type="button" class="btn btn-light">
+					<img src="img/delete.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button></td>
       </tr>
+	  
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+	  
+	  <td><img src="img/mickey.gif" alt=" " style="width:70px;height: 50px;"></td>
+        <td>Mickey</td>
+        <td>Mouse</td>
+		<th>+38761123456</th>
+        <td>mickey@disney.com</td>
+		<td><button type="button" class="btn btn-light">
+			<img src="img/edit.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button><button type="button" class="btn btn-light"><img src="img/delete.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button></td>
       </tr>
+	  
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+	  <td><img src="img/donald.gif" alt=" " style="width:70px;height: 50px;"> </td>
+        <td>Donald</td>
+        <td>Duck</td>
+		<th>+38761123456</th>
+        <td>donald@disney.com</td>
+		<td><button type="button" class="btn btn-light">
+			<img src="img/edit.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button><button type="button" class="btn btn-light"><img src="img/delete.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button></td>
+      </tr>
+	  
+	  <tr>
+	  <td><img src="img/pluto.gif" alt=" "style="width:70px;height: 50px;"> </td>
+        <td>Pluto</td>
+        <td></td>
+		<th>+38761123456</th>
+        <td>pluto@disney.com</td>
+		<td><button type="button" class="btn btn-light">
+			<img src="img/edit.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button><button type="button" class="btn btn-light"><img src="img/delete.png" class="rounded" alt=" " style="width:40px;height: 40px;"></button></td>
       </tr>
     </tbody>
   </table>
-</div>
+  <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+   <br>
+<ul class="pagination justify-content-end">
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+  </ul>
+  </div>
 
 </body>
 </html>

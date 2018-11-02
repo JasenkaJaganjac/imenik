@@ -25,7 +25,10 @@
     font-weight: 900;}
 	
 	.btnSubmit
-{
+
+	.form-control{
+		width: 200px;
+	}{
     width: 50%;
     border-radius: 1rem;
     padding: 1.5%;
